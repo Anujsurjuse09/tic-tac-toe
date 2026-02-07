@@ -1,39 +1,3 @@
-// let quarter = document.querySelector(".div");
-// quarter.innerText="A";
-
-// let boxes = document.querySelectorAll(".box");
-// let turn = "X";
-// boxes.forEach((box)=>{
-//     box.addEventListener("click", () => {  
-//    if(turn ==="X"){
-//     box.innerText="X";
-//     turn = "O";
-//    }
-//    else{
-//      box.innerText = "O";
-//       turn = "X";
-//    }
-// });
-// });
-
-// let win = document.querySelector(".main");
-// let i = 1;
-// for(i = 1; i <= win.length ; i++){
-//     if(i[1] && i[2] && i[3]=== turn){
-//         console.log("win")
-//     }
-// }
-
-// boxes.forEach((box) => {
-//   box.addEventListener("click", () => {
-//     if (box.innerText !== "") return;
-
-//     box.innerText = turn;
-//     checkWinner();
-//     turn = turn === "X" ? "O" : "X";
-//   });
-// });
-
 let boxes = document.querySelectorAll(".box");
 let result = document.querySelector("#result");
 let turn = "X";
@@ -97,4 +61,5 @@ reset.addEventListener("click", ()=>{
 
   turn = "X";           
   result.innerText = ""; 
+
 });
